@@ -1,3 +1,4 @@
+# iterable integer
 class iter_int(int):
     def __getitem__(self, idx):
         digits_str = str(self)
