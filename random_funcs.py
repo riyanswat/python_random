@@ -19,7 +19,7 @@ print(num[20])
 
 # ---------------------------------
 
-
+# Prints the place value of a digit in a number
 def place_value(n):
     values_list = []
     if len(str(n)) < 2:
@@ -29,3 +29,6 @@ def place_value(n):
             values_list.append(f"{digit} x 10^{idx}")
 
     return "\n".join(values_list)
+
+
+print(place_value(3567))
