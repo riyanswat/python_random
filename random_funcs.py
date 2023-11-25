@@ -32,3 +32,35 @@ def place_value(n):
 
 
 print(place_value(3567))
+
+# ---------------------------------
+
+
+
+import random
+from collections import Counter
+
+
+def random_function():
+    def square(n):
+        return n ** 2
+
+    def cube(n):
+        return n ** 3
+
+    def fourth_power(n):
+        return n ** 4
+
+    funcs = [square, cube, fourth_power]
+
+    return random.choice(funcs)
+
+
+results = []
+for i in range(10):
+    rand_func = random_function()
+    results.append(rand_func(2))
+
+
+counter = Counter(results)
+print(counter.most_common(1)[0][0])
